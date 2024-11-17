@@ -1,0 +1,74 @@
+form div + div:not([class]) {
+  margin-top: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-top: 1rem;
+
+  input[type="submit"],
+  input[type="button"] {
+    display: block;
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    align-items: end;
+
+    input[type="submit"],
+    input[type="button"] {
+      display: initial;
+      width: auto;
+    }
+  }
+}
+
+.label {
+  display: block;
+  font-size: 0.875rem; line-height: 1.25rem;
+  font-weight: 500;
+  color: var(--gray-500);
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: .375rem 1rem;
+  font-size: 1rem;
+  color: var(--gray-700);
+  background-color: var(--white);
+  border: 1px solid transparent;
+  border-radius: .5rem;
+  outline: none;
+}
+
+.input:hover {
+  border-color: var(--gray-200);
+}
+
+.input:focus {
+  border-color: var(--gray-300);
+  /* box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1); */
+}
+
+.input::placeholder {
+  color: var(--gray-400);
+  opacity: 1; /* Firefox needs this */
+}
+
+.hint {
+  display: block;
+  margin-top: .5rem;
+  font-size: .75rem; line-height: 1rem;
+  color: var(--gray-500);
+
+  code {
+    padding: .25rem .375rem;
+  	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    background-color: var(--gray-200);
+    border-radius: .25rem;
+    -webkit-user-select: all; -moz-user-select: all; user-select: all;
+  }
+}

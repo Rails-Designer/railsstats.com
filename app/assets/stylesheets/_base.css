@@ -1,0 +1,69 @@
+:root {
+  --gray-50: rgb(249, 250, 251);
+  --gray-100: rgb(243, 244, 246);
+  --gray-200: rgb(229, 231, 235);
+  --gray-300: rgb(209, 213, 219);
+  --gray-400: rgb(156, 163, 175);
+  --gray-500: rgb(107, 114, 128);
+  --gray-600: rgb(75, 85, 99);
+  --gray-700: rgb(55, 65, 81);
+  --gray-800: rgb(31, 41, 55);
+  --gray-900: rgb(17, 24, 39);
+  --gray-950: rgb(3, 7, 18);
+
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+
+  --container-width-xs: 58rem;
+  --container-width-sm: 64rem;
+  --container-width: 72rem;
+
+  /* Added these for reference although they are not(!) supported `@media{}` */
+  /* --breakpoint-sm: 640px; */
+  /* --breakpoint-md: 768px; */
+  /* --breakpoint-lg: 1024px; */
+  /* --breakpoint-xl: 1280px; */
+  /* --breakpoint-2xl: 1536px; */
+
+  --default-transition-duration: 300ms;
+  --default-transition-easing: ease-in-out;
+
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+html {
+  font-feature-settings: "cv02","cv03","cv04","cv11";
+}
+
+body {
+  background-color: var(--gray-100);
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+
+::-moz-selection,
+::selection {
+  background-color: var(--gray-400);
+  color: var(--gray-900);
+}
+
+a:not([class]) {
+  text-decoration-line: underline;
+
+  &:hover {
+    text-decoration-line: none;
+  }
+}
+
+h1.heading {
+  font-size: 1.875rem; line-height: 2.25rem;
+  font-weight: 600;
+  letter-spacing: -.025em;
+  color: var(--gray-800);
+}
+
+h2.heading {
+  font-size: 1.5rem; line-height: 2rem;
+  font-weight: 600;
+  letter-spacing: -.025em;
+  color: var(--gray-800);
+}

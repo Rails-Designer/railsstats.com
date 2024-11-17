@@ -1,0 +1,25 @@
+<%= content_for :title, "Ruby on Rails code stats and metrics for #{@project.name}" %>
+
+<div class="hero">
+  <section class="hero-container">
+    <h1 class="hero__heading rgb-split">
+      <span class="hero__subheading">
+        Ruby on Rails code stats and metrics for
+      </span>
+
+      <%= @project.name %>
+    </h1>
+
+    <p class="hero__description">
+      Total lines of code: <span class="hero__description-highlight"><%= number_with_delimiter @project.total_lines_count %></span>
+    </p>
+
+    <%= render partial: "details", locals: { project: @project.decorate } %>
+  </section>
+</div>
+
+<ul class="stats">
+  <% @project.current_snapshot.listable_metrics.map(&:decorate).each do |metric| %>
+    <%= render partial: "metrics", locals: { metric: metric } %>
+  <% end %>
+</ul>

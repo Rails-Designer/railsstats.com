@@ -1,0 +1,11 @@
+<nav class="navigation">
+  <div class="navigation-container">
+    <%= link_to "Rails Stats", "/", class: "navigation__link navigation__logo transition" %>
+
+    <%= link_to new_snapshot_path, class: "navigation__button transition" do %>
+      <%= icon "plus" %>
+
+      <%= tag.span "Add Your App's Stats" %>
+    <% end %>
+  </div>
+</nav>

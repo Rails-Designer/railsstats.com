@@ -1,0 +1,25 @@
+<div class="hero">
+  <section class="hero-container">
+    <h1 class="hero__heading rgb-split">
+      Rails Stats Show & Tell
+    </h1>
+
+    <p class="hero__description">
+      Browse stats from real Rails projects. See LOC, test ratios, and how different apps measure up. Got a Rails app? Share yours too!
+    </p>
+
+    <div class="hero__cta">
+      <%= link_to "Share your Rails stats", new_snapshot_path, class: "btn btn--lg btn--diap transition" %>
+    </div>
+  </section>
+</div>
+
+<div class="container" style="--container-margin-top: 2rem;">
+  <h2 class="heading">
+    Latest additions
+  </h2>
+
+  <ul class="projects projects--home">
+    <%= render @projects %>
+  </ul>
+</div>

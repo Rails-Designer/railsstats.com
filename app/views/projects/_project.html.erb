@@ -1,0 +1,17 @@
+<li class="project-card transition">
+  <%= link_to project, class: "project-card__content" do %>
+    <h3 class="project-card__title">
+      <%= project.name %>
+    </h3>
+
+    <dl class="project-card__count">
+      <dt class="project-card__key">
+        Total
+      </dt>
+
+      <dd class="project-card__value">
+        <%= number_with_delimiter project.total_lines_count %>
+      </dd>
+    </dl>
+  <% end %>
+</li>
