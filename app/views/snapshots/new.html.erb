@@ -1,0 +1,29 @@
+<h1>
+  Create new snapshot
+</h1>
+
+<%= form_with model: @snapshot, url: snapshots_path do |form| %>
+  <div>
+    <%= form.label :project_name %>
+    <%= form.text_field :project_name %>
+  </div>
+
+  <div>
+    <%= form.label :founded_at %>
+    <%= form.date_field :founded_at %>
+  </div>
+
+  <div>
+    <%= form.label :website %>
+    <%= form.url_field :website, value: "https://" %>
+  </div>
+
+  <div>
+    <%= form.label :raw_data %>
+    <%= form.text_area :raw_data %>
+
+    <p>rails stats | pbcopy</p>
+  </div>
+
+  <%= form.submit %>
+<% end %>

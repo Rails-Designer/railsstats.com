@@ -1,0 +1,10 @@
+<h1><%= @project.name %></h1>
+
+<ul>
+  <% @project.current_snapshot.metrics.each do |metric| %>
+    <li>
+      <%= metric.name %>
+      <%= metric.lines %>
+    </li>
+  <% end %>
+</ul>
