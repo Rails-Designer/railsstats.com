@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
   def index
-    @projects = Project.verified.by_recently_created
+    @projects = Project.by_recently_created # TODO: use verified scope
   end
 
   def show
