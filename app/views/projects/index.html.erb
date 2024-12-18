@@ -1,8 +1,24 @@
-<h1>Rails Apps Sharing Their Metrics</h1>
-<p>`rails stats` from real Rails app</p>
+<div class="hero">
+  <div role="img" class="scanlines"></div>
+  <div role="img" class="scanlines-overlay"></div>
+  <div role="img" class="phosphor"></div>
+  <div role="img" class="interference"></div>
+
+  <section class="hero-container">
+    <h1 class="hero__heading rgb-split">
+      Rails Stats Show & Tell
+    </h1>
+
+    <p class="hero__description">
+      Browse stats from real Rails projects. See LOC, test ratios, and how different apps measure up. Got a Rails app? Share yours too!
+    </p>
+
+    <div class="hero__cta">
+      <%= link_to "Share your Rails stats", new_snapshot_path, class: "" %>
+    </div>
+  </section>
+</div>
 
 <ul>
   <%= render @projects %>
 </ul>
-
-<%= link_to "Add your project", new_snapshot_path %>
