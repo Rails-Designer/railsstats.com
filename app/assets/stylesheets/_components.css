@@ -17,8 +17,8 @@
   letter-spacing: -0.025em;
   color: rgb(255, 255, 255);
   text-shadow:
-    -3px 0 #ff0080,
-    3px 0 #00e1ff;
+    -2px 0 #ff0080,
+    2px 0 #00e1ff;
 
   animation:
     textFlicker 3s infinite,
