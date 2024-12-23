@@ -25,6 +25,6 @@ group :development, :test do
 end
 
 group :development do
-  gem "hotwire-spark", "~> 0.1.3"
+  gem "hotwire-spark", "~> 0.1.9"
   gem "web-console"
 end
