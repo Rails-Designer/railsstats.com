@@ -13,6 +13,8 @@ class Project < ApplicationRecord
 
   def to_param = slug
 
+  delegate :total_count, to: :current_snapshot
+
   private
 
   def set_slug

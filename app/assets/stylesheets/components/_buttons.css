@@ -1,0 +1,35 @@
+.btn {
+  display: inline-block;
+  padding: .5rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -.025em;
+  border-radius: .75rem;
+
+  &:hover {
+    transform: translateY(var(--translateY, -1px));
+  }
+}
+
+.btn--lg {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+}
+
+.btn--primary {
+  background-color: var(--gray-950);
+  color: var(--gray-50);
+
+  &:hover {
+    background-color: var(--gray-800);
+  }
+}
+
+.btn--diap {
+  background-color: var(--gray-50);
+  color: var(--gray-950);
+
+  &:hover {
+    background-color: var(--gray-200);
+  }
+}

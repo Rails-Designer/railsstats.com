@@ -227,6 +227,9 @@ GEM
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
+    rails_icons (1.0.0)
+      nokogiri (~> 1.16, >= 1.16.4)
+      rails (> 6.1)
     railties (8.0.1)
       actionpack (= 8.0.1)
       activesupport (= 8.0.1)
@@ -357,6 +360,7 @@ DEPENDENCIES
   propshaft (~> 1.1)
   puma (~> 6.5)
   rails (~> 8.0, >= 8.0.1)
+  rails_icons (~> 1.0)
   rubocop-rails-omakase
   solid_cable
   solid_queue

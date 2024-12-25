@@ -11,7 +11,24 @@
   --gray-900: rgb(17, 24, 39);
   --gray-950: rgb(3, 7, 18);
 
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+
   --container-width: 72rem;
+
+  /* Added these for reference although they are not(!) supported ` @media{}` */
+  /* --breakpoint-sm: 640px; */
+  /* --breakpoint-md: 768px; */
+  /* --breakpoint-lg: 1024px; */
+  /* --breakpoint-xl: 1280px; */
+  /* --breakpoint-2xl: 1536px; */
+
+  --default-transition-duration: 300ms;
+  --default-transition-easing: ease-in-out;
+}
+
+body {
+  background-color: var(--gray-100);
 }
 
 a:not([class]) {
@@ -20,4 +37,8 @@ a:not([class]) {
   &:hover {
     text-decoration-line: none;
   }
+}
+
+.transition {
+  transition: all var(--default-transition-duration) var(--default-transition-easing);
 }
