@@ -37,7 +37,7 @@ class Snapshot::Parse
     metric.save! if metric.valid?
   end
 
-  def metric_allowed?(name) = Snapshot::Metric::ALLOWED_NAMES.include?(name)
+  def metric_allowed?(name) = Snapshot::Metric::ALLOWED_NAMES.key?(name)
 
   def parsed(columns)
     MetricData.new(

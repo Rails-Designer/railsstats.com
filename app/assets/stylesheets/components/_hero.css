@@ -21,6 +21,17 @@
   filter: blur(.3px);
 }
 
+.hero__subheading {
+  display: block;
+  font-size: 2.25rem; line-height: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -.025em;
+  color: rgb(255, 255, 255);
+  text-shadow: -2px 0 #ff0080, 2px 0 #00e1ff;
+  animation: textFlicker 3s infinite, blur 10s infinite;
+  filter: blur(.3px);
+}
+
 .hero__description {
   max-width: calc(var(--container-width)/1.5);
   margin-top: 2rem;
@@ -30,6 +41,17 @@
   color: var(--gray-200);
   animation: textFlicker 3s infinite, blur 10s infinite;
   filter: blur(.3px);
+}
+
+.hero__description-highlight {
+  display: inline-block;
+  margin-left: .5rem;
+  padding: .5rem 1.25rem;
+  color: var(--gray-800);
+  font-weight: 700;
+  background-color: var(--gray-50);
+  border-radius: .5rem;
+  transform: rotate(-4deg) translateY(-.25rem);
 }
 
 .hero__cta {

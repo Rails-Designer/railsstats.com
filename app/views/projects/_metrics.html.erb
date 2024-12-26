@@ -1,0 +1,30 @@
+<%# locals: (metric:) -%>
+<li class="stat-container transition">
+  <dl>
+    <details>
+      <summary class="stat stat--anchor">
+        <dt class="stat__key stat__key--anchor">
+          <%= metric.humanized_name %>
+        </dt>
+
+        <dd class="stat__value">
+          <%= number_with_delimiter metric.lines %>
+        </dd>
+      </summary>
+
+      <div class="stat--subs">
+        <% Snapshot::Metric::VISIBLE_KEYS.each do |key| %>
+          <div class="stat">
+            <dt class="stat__key stat__key--sub">
+              <%= key.humanize %>
+            </dt>
+
+            <dd class="stat__value stat__value--sub">
+              <%= number_with_delimiter metric[key] %>
+            </dd>
+          </div>
+        <% end %>
+      </div>
+    </details>
+  </dl>
+</li>

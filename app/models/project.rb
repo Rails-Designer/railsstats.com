@@ -13,7 +13,7 @@ class Project < ApplicationRecord
 
   def to_param = slug
 
-  delegate :total_count, to: :current_snapshot
+  delegate :total_lines_count, to: :current_snapshot
 
   private
 

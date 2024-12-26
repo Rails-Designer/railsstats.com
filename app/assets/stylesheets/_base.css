@@ -16,7 +16,7 @@
 
   --container-width: 72rem;
 
-  /* Added these for reference although they are not(!) supported ` @media{}` */
+  /* Added these for reference although they are not(!) supported `@media{}` */
   /* --breakpoint-sm: 640px; */
   /* --breakpoint-md: 768px; */
   /* --breakpoint-lg: 1024px; */
@@ -25,10 +25,23 @@
 
   --default-transition-duration: 300ms;
   --default-transition-easing: ease-in-out;
+
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+html {
+  font-feature-settings: "cv02","cv03","cv04","cv11";
 }
 
 body {
   background-color: var(--gray-100);
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+
+::-moz-selection,
+::selection {
+  background-color: var(--gray-400);
+  color: var(--gray-900);
 }
 
 a:not([class]) {
@@ -39,6 +52,9 @@ a:not([class]) {
   }
 }
 
-.transition {
-  transition: all var(--default-transition-duration) var(--default-transition-easing);
+h2.heading {
+  font-size: 1.5rem; line-height: 2rem;
+  font-weight: 600;
+  letter-spacing: -.025em;
+  color: var(--gray-800);
 }
