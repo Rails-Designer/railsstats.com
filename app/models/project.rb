@@ -1,5 +1,6 @@
 class Project < ApplicationRecord
   include OrderableByTimestamp
+  include Decoration
 
   before_validation :set_slug, if: :new_record?
 

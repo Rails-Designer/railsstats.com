@@ -12,8 +12,13 @@
 }
 
 .btn--lg {
-  padding: 1rem 3rem;
-  font-size: 1.5rem;
+  padding: .75rem 2.75rem;
+  font-size: 1.25rem;
+
+  @media (min-width: 640px) {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+  }
 }
 
 .btn--primary {

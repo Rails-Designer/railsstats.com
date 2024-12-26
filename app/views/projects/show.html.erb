@@ -13,6 +13,8 @@
     <p class="hero__description">
       Total lines of code: <span class="hero__description-highlight"><%= number_with_delimiter @project.total_lines_count %></span>
     </p>
+
+    <%= render partial: "details", locals: { project: @project.decorate } %>
   </section>
 </div>
 

@@ -12,46 +12,62 @@
 }
 
 .hero__heading {
-  font-size: 6rem; line-height: 1;
+  font-size: 3.75rem; line-height: 1;
   font-weight: 900;
   letter-spacing: -.025em;
   color: rgb(255, 255, 255);
-  text-shadow: -2px 0 #ff0080, 2px 0 #00e1ff;
-  animation: textFlicker 3s infinite, blur 10s infinite;
-  filter: blur(.3px);
+
+  @media (min-width: 640px) {
+    font-size: 6rem; line-height: 1;
+    text-shadow: -2px 0 #ff0080, 2px 0 #00e1ff;
+    filter: blur(.3px);
+    animation: textFlicker 3s infinite, blur 10s infinite;
+  }
 }
 
 .hero__subheading {
   display: block;
-  font-size: 2.25rem; line-height: 2.5rem;
+  font-size: 1.5rem; line-height: 2rem;
   font-weight: 600;
   letter-spacing: -.025em;
   color: rgb(255, 255, 255);
-  text-shadow: -2px 0 #ff0080, 2px 0 #00e1ff;
-  animation: textFlicker 3s infinite, blur 10s infinite;
-  filter: blur(.3px);
+
+  @media (min-width: 640px) {
+    font-size: 2.25rem; line-height: 2.5rem;
+    text-shadow: -2px 0 #ff0080, 2px 0 #00e1ff;
+    filter: blur(.3px);
+    animation: textFlicker 3s infinite, blur 10s infinite;
+  }
 }
 
 .hero__description {
   max-width: calc(var(--container-width)/1.5);
   margin-top: 2rem;
   margin-left: auto; margin-right: auto;
-  font-size: 1.875rem; line-height: 2.25rem;
+  font-size: 1.25rem; line-height: 1.75rem;
   font-weight: 200;
   color: var(--gray-200);
-  animation: textFlicker 3s infinite, blur 10s infinite;
-  filter: blur(.3px);
+
+  @media (min-width: 640px) {
+    font-size: 1.875rem; line-height: 2.25rem;
+    filter: blur(.3px);
+    animation: textFlicker 3s infinite, blur 10s infinite;
+  }
 }
 
 .hero__description-highlight {
   display: inline-block;
   margin-left: .5rem;
-  padding: .5rem 1.25rem;
+  padding: .125rem .75rem;
   color: var(--gray-800);
   font-weight: 700;
   background-color: var(--gray-50);
   border-radius: .5rem;
-  transform: rotate(-4deg) translateY(-.25rem);
+
+  @media (min-width: 640px) {
+    padding: .5rem 1.25rem;
+    transform: rotate(-4deg) translateY(-.25rem);
+  }
 }
 
 .hero__cta {

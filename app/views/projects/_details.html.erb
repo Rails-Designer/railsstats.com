@@ -1,0 +1,22 @@
+<%# locals: (project:) -%>
+<ul class="project-details">
+  <%= tag.li class: "project-detail project-detail--verified" do %>
+    <%= icon "badge-check" %>
+
+    <%= tag.span "Verified", class: "" %>
+  <% end if project.verified_at.present? %>
+
+  <li class="project-detail">
+    <%= icon "square-arrow-out-up-right" %>
+
+    <%= link_to project.display_website, project.website, rel: :nofollow %>
+  </li>
+
+  <li class="project-detail">
+    <%= icon "target" %>
+
+    <span>
+      Founded <%= project.display_founded_at %>
+    </span>
+  </li>
+</ul>

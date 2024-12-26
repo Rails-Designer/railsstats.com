@@ -1,5 +1,42 @@
 @import "components/hero";
 @import "components/buttons";
 @import "components/footer";
-@import "components/projects-grid"
+@import "components/projects-grid";
 @import "components/stats";
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: var(--container-width);
+  margin-right: auto; margin-left: auto;
+  margin-top: 2rem;
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+    margin-top: 3rem;
+    -moz-column-gap: 2rem; column-gap: 2rem;
+  }
+}
+
+.project-detail {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: .5rem; column-gap: .5rem;
+  font-weight: 400;
+  color: var(--gray-300);
+
+  [data-slot=icon] {
+    width: 1rem; height: 1rem;
+    flex-shrink: 0;
+  }
+}
+
+.project-detail--verified {
+  padding: .25rem .75rem;
+  border-radius: .375rem;
+  background-color: rgba(255, 191, 0, 0.15);
+  color: rgba(255, 191, 0, 1);
+  border: 1px solid rgba(255, 191, 0, 0.5);
+}
