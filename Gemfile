@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem "bootsnap", "~> 1.18", ">= 1.18.4", require: false
 gem "rails", "~> 8.0", ">= 8.0.1"
-gem "sqlite3", "~> 2.4", ">= 2.4.1"
+gem "sqlite3", "~> 2.5"
 gem "puma", "~> 6.5"
 
 gem "propshaft", "~> 1.1"
