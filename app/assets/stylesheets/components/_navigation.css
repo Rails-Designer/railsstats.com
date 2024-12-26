@@ -16,9 +16,14 @@
 .navigation__link {
   color: var(--gray-900);
   font-weight: 700;
+}
+
+.navigation__logo {
+  font-weight: 800;
+  letter-spacing: -.025em;
 
   &:hover {
-    transform: translate(1.05);
+    transform: scale(1.05);
   }
 }
 
