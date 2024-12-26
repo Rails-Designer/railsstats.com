@@ -1,29 +1,33 @@
-<h1>
-  Create new snapshot
-</h1>
+<div class="snapshot-form-container container container--xs" style="--container-margin-top: 2rem">
+  <h1 class="heading">
+    Create new snapshot
+  </h1>
 
-<%= form_with model: @snapshot, url: snapshots_path do |form| %>
-  <div>
-    <%= form.label :project_name %>
-    <%= form.text_field :project_name %>
-  </div>
+  <%= form_with model: @snapshot, url: snapshots_path, class: "snapshot-form" do |form| %>
+    <div>
+      <%= form.label :project_name, class: "label" %>
+      <%= form.text_field :project_name, placeholder: "Rails Designer", class: "input" %>
+    </div>
 
-  <div>
-    <%= form.label :founded_at %>
-    <%= form.date_field :founded_at %>
-  </div>
+    <div>
+      <%= form.label :founded_at, class: "label" %>
+      <%= form.date_field :founded_at, class: "input" %>
+    </div>
 
-  <div>
-    <%= form.label :website %>
-    <%= form.url_field :website, value: "https://" %>
-  </div>
+    <div>
+      <%= form.label :website, class: "label" %>
+      <%= form.url_field :website, value: "https://", class: "input" %>
+    </div>
 
-  <div>
-    <%= form.label :raw_data %>
-    <%= form.text_area :raw_data %>
+    <div>
+      <%= form.label :raw_data, class: "label" %>
+      <%= form.text_area :raw_data, rows: 3, placeholder: Snapshot::Metric.raw_data_placeholder, class: "input" %>
 
-    <p>rails stats | pbcopy</p>
-  </div>
+      <small class="hint">Run <code>rails stats | pbcopy</code> and paste above</small>
+    </div>
 
-  <%= form.submit %>
-<% end %>
+    <div class="buttons">
+      <%= form.submit class: "btn btn--primary" %>
+    </div>
+  <% end %>
+</div>

@@ -1,5 +1,6 @@
 @import "components/hero";
 @import "components/buttons";
+@import "components/navigation";
 @import "components/footer";
 @import "components/projects-grid";
 @import "components/stats";
@@ -39,4 +40,12 @@
   background-color: rgba(255, 191, 0, 0.15);
   color: rgba(255, 191, 0, 1);
   border: 1px solid rgba(255, 191, 0, 0.5);
+}
+
+.snapshot-form-container {
+  padding: .5rem;
+}
+
+.snapshot-form {
+  margin-top: 1rem;
 }

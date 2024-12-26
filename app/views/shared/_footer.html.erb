@@ -1,12 +1,13 @@
 <footer class="footer">
   <div class="footer-container">
-    <%= link_to new_snapshot_path, class: "footer__link transition" do %>
-      <%= icon "plus" %>
-      <%= tag.span "Add Your App's Stats" %>
-    <% end %>
-
     <p class="footer__text">
       By <%= link_to "Rails Designer", "https://railsdesigner", rel: "nofollow" %>
     </p>
   </div>
+
+  <%= link_to "https://github.com/rails-designer/railsstats.com", rel: :nofollow, class: "footer__link-oss transition" do %>
+    <%= icon "github" %>
+
+    <span>Rails Stats is open-source</span>
+  <% end %>
 </footer>

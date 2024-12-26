@@ -6,7 +6,9 @@ class Snapshot::Parse
   def run
     metrics.each do |metric|
       metric_data = split(metric)
+
       next unless valid?(metric_data)
+
       name = metric_data[1].downcase
 
       create_metric_for(name, data: parsed(metric_data)) if metric_allowed?(name)
@@ -34,10 +36,14 @@ class Snapshot::Parse
       methods: data.methods
     )
 
+    p "#" * 20
+    p metric.valid?
+    p "#" * 20
+
     metric.save! if metric.valid?
   end
 
-  def metric_allowed?(name) = Snapshot::Metric::ALLOWED_NAMES.key?(name)
+  def metric_allowed?(name) = Snapshot::Metric::ALLOWED_NAMES.key?(name.to_sym)
 
   def parsed(columns)
     MetricData.new(

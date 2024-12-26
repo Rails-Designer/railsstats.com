@@ -23,5 +23,13 @@ class Snapshot::Metric < ApplicationRecord
 
   belongs_to :snapshot
 
-  validates :name, inclusion: {in: ALLOWED_NAMES.keys}
+  validates :name, inclusion: {in: ALLOWED_NAMES.keys.map(&:to_s)}
+
+  def self.raw_data_placeholder
+    <<~HTML
+    +----------------------+--------+--------+---------+---------+-----+-------+
+    | Name                 |  Lines |    LOC | Classes | Methods | M/C | LOC/M |
+    +----------------------+--------+--------+---------+---------+-----+-------+
+    HTML
+  end
 end

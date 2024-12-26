@@ -16,6 +16,8 @@ class Project < ApplicationRecord
 
   delegate :total_lines_count, to: :current_snapshot
 
+  def verify! = update(verified_at: Time.current)
+
   private
 
   def set_slug

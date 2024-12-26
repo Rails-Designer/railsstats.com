@@ -1,10 +1,9 @@
 .btn {
   display: inline-block;
   padding: .5rem 2rem;
-  font-size: 1rem;
+  font-size: 0.875rem; line-height: 1.25rem;
   font-weight: 600;
-  letter-spacing: -.025em;
-  border-radius: .75rem;
+  border-radius: .5rem;
 
   &:hover {
     transform: translateY(var(--translateY, -1px));

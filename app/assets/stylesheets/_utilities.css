@@ -5,6 +5,13 @@
   margin-left: auto; margin-right: auto;
 }
 
+.container--sm {
+  max-width: var(--container-width-sm);
+}
+
+.container--xs {
+  max-width: var(--container-width-xs);
+
 .select-none {
   -webkit-user-select: none; -moz-user-select: none; user-select: none;
 }

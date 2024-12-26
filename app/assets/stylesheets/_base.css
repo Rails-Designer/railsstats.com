@@ -14,6 +14,8 @@
   --black: rgb(0, 0, 0);
   --white: rgb(255, 255, 255);
 
+  --container-width-xs: 58rem;
+  --container-width-sm: 64rem;
   --container-width: 72rem;
 
   /* Added these for reference although they are not(!) supported `@media{}` */
@@ -50,6 +52,13 @@ a:not([class]) {
   &:hover {
     text-decoration-line: none;
   }
+}
+
+h1.heading {
+  font-size: 1.875rem; line-height: 2.25rem;
+  font-weight: 600;
+  letter-spacing: -.025em;
+  color: var(--gray-800);
 }
 
 h2.heading {
