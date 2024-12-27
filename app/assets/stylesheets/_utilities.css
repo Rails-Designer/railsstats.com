@@ -11,6 +11,7 @@
 
 .container--xs {
   max-width: var(--container-width-xs);
+}
 
 .select-none {
   -webkit-user-select: none; -moz-user-select: none; user-select: none;
