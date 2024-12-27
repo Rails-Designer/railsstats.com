@@ -1,4 +1,5 @@
 .navigation {
+  background-color: var(--white);
   border-bottom: 1px solid var(--gray-200);
 }
 
