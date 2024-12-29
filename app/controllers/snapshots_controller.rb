@@ -1,4 +1,6 @@
  class SnapshotsController < ApplicationController
+  invisible_captcha only: %w[create], timestamp_enabled: false
+
   def new
     @snapshot = Snapshot::CreateForm.new
   end
