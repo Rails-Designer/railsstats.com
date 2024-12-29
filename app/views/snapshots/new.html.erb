@@ -1,6 +1,6 @@
 <div class="snapshot-form-container container container--xs" style="--container-margin-top: 2rem">
   <h1 class="heading">
-    Create new snapshot
+    Add your Rails app's stats
   </h1>
 
   <%= form_with model: @snapshot, url: snapshots_path, class: "snapshot-form" do |form| %>
@@ -27,6 +27,7 @@
     </div>
 
     <div class="buttons">
+      <%= invisible_captcha %>
       <%= form.submit class: "btn btn--primary" %>
     </div>
   <% end %>

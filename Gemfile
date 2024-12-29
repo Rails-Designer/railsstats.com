@@ -10,6 +10,7 @@ gem "importmap-rails", "~> 2.0", ">= 2.0.3"
 gem "turbo-rails", "~> 2.0", ">= 2.0.11"
 gem "stimulus-rails", "~> 1.3", ">= 1.3.4"
 gem "rails_icons", "~> 1.0"
+gem "invisible_captcha", "~> 2.3"
 
 gem "solid_queue"
 gem "solid_cable"
