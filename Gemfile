@@ -16,7 +16,7 @@ gem "solid_queue"
 gem "solid_cable"
 
 gem "kamal", "~> 2.4", require: false
-gem "thruster", "~> 0.1.9", require: false
+gem "thruster", "~> 0.1.10", require: false
 
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
