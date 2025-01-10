@@ -20,6 +20,8 @@ class Project < ApplicationRecord
 
   def verify! = update(verified_at: Time.current)
 
+  def verified? = verified_at.present?
+
   private
 
   def set_slug

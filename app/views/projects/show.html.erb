@@ -18,6 +18,8 @@
   </section>
 </div>
 
+<%= render partial: "unverified_banner", locals: { project: @project.decorate } unless @project.verified? %>
+
 <ul class="stats">
   <% @project.current_snapshot.listable_metrics.map(&:decorate).each do |metric| %>
     <%= render partial: "metrics", locals: { metric: metric } %>
