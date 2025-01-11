@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   resources :snapshots, only: %w[new create edit update]
 
   get "up" => "rails/health#show", as: :rails_health_check
+
+  get "/*page", to: "pages#show", as: :page
 end

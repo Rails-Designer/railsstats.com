@@ -1,9 +1,13 @@
 <footer class="footer">
-  <div class="footer-container">
-    <p class="footer__text">
+  <ul class="footer-container">
+    <li class="footer__text">
+      <%= link_to "About", page_path("about") %>
+    </li>
+
+    <li class="footer__text">
       By <%= link_to "Rails Designer", "https://railsdesigner.com", rel: "nofollow" %>
-    </p>
-  </div>
+    </li>
+  </ul>
 
   <%= link_to "https://github.com/rails-designer/railsstats.com", rel: :nofollow, class: "footer__link-oss transition" do %>
     <%= icon "github" %>

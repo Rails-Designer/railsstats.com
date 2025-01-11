@@ -3,6 +3,7 @@
 @import "components/navigation";
 @import "components/footer";
 @import "components/projects-grid";
+@import "components/static";
 @import "components/stats";
 
 .project-details {
