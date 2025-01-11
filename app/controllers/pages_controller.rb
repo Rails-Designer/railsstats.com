@@ -18,7 +18,7 @@ class PagesController < ApplicationController
 
   private
 
-  def not_found = render file: Rails.public_path.join('404.html'), status: :not_found, layout: false
+  def not_found = render file: Rails.public_path.join("404.html"), status: :not_found, layout: false
 
   def markdown(content) = Kramdown::Document.new(content).to_html
 end
