@@ -1,4 +1,4 @@
-class Snapshot::MetricDecorator < SimpleDelegator
+class Snapshot::Metric::Decorator < SimpleDelegator
   def humanized_name
     Snapshot::Metric::ALLOWED_NAMES.key?(name.to_sym) ? Snapshot::Metric::ALLOWED_NAMES[name.to_sym] : name.humanize
   end
