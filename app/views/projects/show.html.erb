@@ -2,12 +2,12 @@
 
 <div class="hero">
   <section class="hero-container">
-    <h1 class="hero__heading rgb-split">
+    <h1 class="hero__heading">
       <span class="hero__subheading">
         Ruby on Rails code stats and metrics for
       </span>
 
-      <%= @project.name %>
+      <%= tag.span @project.name, class: "glitch", data: { text: @project.name } %>
     </h1>
 
     <p class="hero__description">
