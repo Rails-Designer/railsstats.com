@@ -36,10 +36,6 @@ class Snapshot::Parse
       methods: data.methods
     )
 
-    p "#" * 20
-    p metric.valid?
-    p "#" * 20
-
     metric.save! if metric.valid?
   end
 
