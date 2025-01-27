@@ -14,7 +14,7 @@ gem "stimulus-rails", "~> 1.3", ">= 1.3.4"
 gem "turbo-rails", "~> 2.0", ">= 2.0.11"
 
 gem "solid_queue", "~> 1.1", ">= 1.1.2"
-gem "solid_cable", "~> 3.0", ">= 3.0.5"
+gem "solid_cable", "~> 3.0"
 
 gem "kamal", "~> 2.4", require: false
 gem "thruster", "~> 0.1.10", require: false
