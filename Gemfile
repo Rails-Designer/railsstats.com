@@ -11,7 +11,7 @@ gem "kramdown", "~> 2.5", ">= 2.5.1"
 gem "propshaft", "~> 1.1"
 gem "rails_icons", "~> 1.1"
 gem "stimulus-rails", "~> 1.3", ">= 1.3.4"
-gem "turbo-rails", "~> 2.0", ">= 2.0.11"
+gem "turbo-rails", "~> 2.0"
 
 gem "solid_queue", "~> 1.1"
 gem "solid_cable", "~> 3.0"
