@@ -13,7 +13,7 @@ gem "rails_icons", "~> 1.3"
 gem "stimulus-rails", "~> 1.3", ">= 1.3.4"
 gem "turbo-rails", "~> 2.0"
 
-gem "solid_queue", "~> 1.1"
+gem "solid_queue", "~> 1.2"
 gem "solid_cable", "~> 3.0"
 
 gem "kamal", "~> 2.7", require: false
