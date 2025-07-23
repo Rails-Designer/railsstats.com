@@ -118,7 +118,7 @@ GEM
       zeitwerk
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
-    importmap-rails (2.0.3)
+    importmap-rails (2.2.0)
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
@@ -264,7 +264,7 @@ GEM
       erb
       psych (>= 4.0.0)
     regexp_parser (2.10.0)
-    reline (0.6.1)
+    reline (0.6.2)
       io-console (~> 0.5)
     rexml (3.4.0)
     rubocop (1.73.0)
@@ -377,7 +377,7 @@ DEPENDENCIES
   brakeman
   debug
   hotwire-spark (~> 0.1.13)
-  importmap-rails (~> 2.0, >= 2.0.3)
+  importmap-rails (~> 2.2)
   invisible_captcha (~> 2.3)
   kamal (~> 2.7)
   kramdown (~> 2.5, >= 2.5.1)
