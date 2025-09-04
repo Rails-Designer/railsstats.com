@@ -211,7 +211,7 @@ GEM
     psych (5.2.6)
       date
       stringio
-    puma (6.6.1)
+    puma (7.0.0)
       nio4r (~> 2.0)
     raabro (1.4.0)
     racc (1.8.1)
@@ -382,7 +382,7 @@ DEPENDENCIES
   kamal (~> 2.7)
   kramdown (~> 2.5, >= 2.5.1)
   propshaft (~> 1.2)
-  puma (~> 6.6)
+  puma (~> 7.0)
   rails (~> 8.0)
   rails_icons (~> 1.4)
   rubocop-rails-omakase
