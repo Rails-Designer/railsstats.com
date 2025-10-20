@@ -3,7 +3,7 @@ source "https://rubygems.org"
 gem "bootsnap", "~> 1.18", require: false
 gem "rails", "~> 8.0"
 gem "sqlite3", "~> 2.7"
-gem "puma", "~> 7.0"
+gem "puma", "~> 7.1"
 
 gem "importmap-rails", "~> 2.2"
 gem "invisible_captcha", "~> 2.3"
@@ -17,7 +17,7 @@ gem "solid_queue", "~> 1.2"
 gem "solid_cable", "~> 3.0"
 
 gem "kamal", "~> 2.8", require: false
-gem "thruster", "~> 0.1.15", require: false
+gem "thruster", "~> 0.1.16", require: false
 
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
