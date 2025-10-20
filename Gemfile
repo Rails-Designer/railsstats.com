@@ -3,7 +3,7 @@ source "https://rubygems.org"
 gem "bootsnap", "~> 1.18", require: false
 gem "rails", "~> 8.0"
 gem "sqlite3", "~> 2.7"
-gem "puma", "~> 7.0"
+gem "puma", "~> 7.1"
 
 gem "importmap-rails", "~> 2.2"
 gem "invisible_captcha", "~> 2.3"
