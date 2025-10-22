@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "bootsnap", "~> 1.18", require: false
-gem "rails", "~> 8.0"
+gem "rails", "~> 8.1"
 gem "sqlite3", "~> 2.7"
 gem "puma", "~> 7.1"
 
