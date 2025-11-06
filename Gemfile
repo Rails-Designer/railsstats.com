@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem "bootsnap", "~> 1.18", require: false
 gem "rails", "~> 8.1"
-gem "sqlite3", "~> 2.7"
+gem "sqlite3", "~> 2.8"
 gem "puma", "~> 7.1"
 
 gem "importmap-rails", "~> 2.2"
