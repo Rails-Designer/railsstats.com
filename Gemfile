@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "bootsnap", "~> 1.19", require: false
+gem "bootsnap", "~> 1.20", require: false
 gem "rails", "~> 8.1"
 gem "sqlite3", "~> 2.8"
 gem "puma", "~> 7.1"
