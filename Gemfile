@@ -9,7 +9,7 @@ gem "importmap-rails", "~> 2.2"
 gem "invisible_captcha", "~> 2.3"
 gem "kramdown", "~> 2.5"
 gem "propshaft", "~> 1.3"
-gem "rails_icons", "~> 1.5"
+gem "rails_icons", "~> 1.6"
 gem "stimulus-rails", "~> 1.3", ">= 1.3.4"
 gem "turbo-rails", "~> 2.0"
 
