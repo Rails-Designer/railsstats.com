@@ -16,7 +16,7 @@ gem "turbo-rails", "~> 2.0"
 gem "solid_queue", "~> 1.3"
 gem "solid_cable", "~> 3.0"
 
-gem "kamal", "~> 2.10", require: false
+gem "kamal", "~> 2.11", require: false
 gem "thruster", "~> 0.1.19", require: false
 
 gem "tzinfo-data", platforms: %i[ windows jruby ]
