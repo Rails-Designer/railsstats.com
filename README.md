@@ -1,3 +1,7 @@
+> ![INFO]
+> The domain will expire when it expires. If you want to take over: [get in touch](mailto:support@railsdesigner.com) 🛎️
+
+
 # Rails Stats Show & Tell
 
 ![Screenshot of Rails Stats project](https://raw.githubusercontent.com/Rails-Designer/railsstats.com/HEAD/.github/screenshot.jpg)
